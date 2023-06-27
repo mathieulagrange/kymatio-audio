@@ -4,14 +4,10 @@ from scipy.spatial import distance as dist
 import kymatio as kym
 
 # MIT license
+# talk about time support
+# todo median like norm
 
 TARGET_SR = 22050
-
-
-
-# talk about time support
-
-# todo median like norm
 
 def scattering_audio_distance(audio, sr, normalization=1e-6):
     
@@ -38,6 +34,7 @@ def scattering_audio(audio, sr):
         Q_fr=2, # quality factor for frequential scattering
         T='global' # global averaging over time
         )
+    
     print('Time support: '+str(jtfs.shape[0]/TARGET_SR)+' seconds.')
     
     c = np.zeros((len(audio), jtfs.output_size()-1))
