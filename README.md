@@ -33,14 +33,18 @@ In this experiment, we consider two vowels an *a* and a *i* that is buried in wh
 
 ![MSS](assets/noise_mss.png)
 ![SAD](assets/noise_sad.png)
+
 MSS and SAD perform similarly in this case, which is expected since no modulations are involved for discriminability.
 
 ### Vocalic triangle
 
-In this experiment, we consider . [listen](assets/vowel.wav)
+In this experiment, we consider a set of vowels recorded by [Bruce P. Hayes](https://linguistics.ucla.edu/people/hayes), made available [here](https://linguistics.ucla.edu/people/hayes/103/Charts/VChart). The audio data as well as the reference chart below are used with permission. Please [listen](assets/vowel.wav) to the set of vowels sequenced from *i* to *u*.
 
+![MSS](assets/vowel.jpeg)
 ![MSS](assets/vowel_mss.png)
 ![SAD](assets/vowel_sad.png)
+
+While the MSS retrieves correctly organization along the first format, the SAD retrieves it better along the second formant, achieving an organization close to the reference vocalic triangle.
 
 ### McAdams Timbre dataset
 
